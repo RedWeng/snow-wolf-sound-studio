@@ -1,13 +1,33 @@
-# 排除所有影片檔案（太大，應該用 CDN）
+# 排除所有影片檔案（太大，應該用 CDN 或 YouTube）
 public/video/**
 public/image2/*.mp4
 
-# 排除大型圖片資料夾（只保留必要的角色圖片）
-public/image/**
-public/image2/**
-
-# 保留必要的角色圖片
-!public/full/**
+# 排除超大圖片（> 10MB）
+public/image/1769486410021*.png
+public/image/1769486410028*.png
+public/image/1769486410039*.png
+public/image/1769486410049*.png
+public/image/1769486410056*.png
+public/image/1769486410063*.png
+public/image/1769486410070*.png
+public/image/1769486410084*.png
+public/image/1769486410098*.png
+public/image/1769486410105*.png
+public/image/1769486410112*.png
+public/image/1769486410133*.png
+public/image/1769486410140*.png
+public/image/1769486410147*.png
+public/image/1769486410154*.png
+public/image/1769486410161*.png
+public/image/1769486410168*.png
+public/image/1769486410182*.png
+public/image/1769486410189*.png
+public/image/1769486410196*.png
+public/image/1769486410203*.png
+public/image/1769486410210*.png
+public/image/1769486410217*.png
+public/image/1769486410224*.png
+public/image/經典場照片.png
 
 # 排除開發檔案
 .next/dev
