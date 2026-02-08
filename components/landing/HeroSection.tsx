@@ -42,7 +42,7 @@ export function HeroSection({ onBrowseSessions, language = 'zh' }: HeroSectionPr
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* HERO Background Image */}
       <img 
-        src="/image2/課程資訊HERO圖.png"
+        src="https://res.cloudinary.com/dp31h1t3v/image/upload/v1770546855/snow-wolf/image2/yauych2msulvecohxune.png"
         alt="Recording Party Hero"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />

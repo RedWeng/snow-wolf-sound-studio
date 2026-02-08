@@ -456,7 +456,7 @@ export default function SessionsPage() {
           
           {/* Fallback Image */}
           <img 
-            src="/image2/課程資訊HERO圖.png"
+            src="https://res.cloudinary.com/dp31h1t3v/image/upload/v1770546855/snow-wolf/image2/yauych2msulvecohxune.png"
             alt="課程資訊"
             className="absolute inset-0 w-full h-full object-cover"
             style={{ display: 'none' }}
