@@ -1,0 +1,120 @@
+/**
+ * Character role configurations for sessions
+ * This file defines character roles that can be assigned to sessions
+ */
+
+import { CharacterRole } from '@/lib/types/database';
+
+/**
+ * Battle of Kadal (卡達爾之戰) character roles
+ * 6 characters from the Snow Wolf Boy series
+ */
+export const battleOfKadalRoles: CharacterRole[] = [
+  {
+    id: 'aileen',
+    name_zh: '艾琳',
+    name_en: 'Aileen',
+    image_url: '/full/aileen-full.png',
+    capacity: 4,
+  },
+  {
+    id: 'litt',
+    name_zh: '里特',
+    name_en: 'Litt',
+    image_url: '/full/Litt-full.png',
+    capacity: 4,
+  },
+  {
+    id: 'kadar',
+    name_zh: '卡達爾',
+    name_en: 'Kadar',
+    image_url: '/full/kadar-full.png',
+    capacity: 4,
+  },
+  {
+    id: 'fia',
+    name_zh: '菲亞',
+    name_en: 'Fia',
+    image_url: '/full/fia-full.png',
+    capacity: 4,
+  },
+  {
+    id: 'aina',
+    name_zh: '艾娜',
+    name_en: 'Aina',
+    image_url: '/full/aina-full.png',
+    capacity: 4,
+  },
+  {
+    id: 'erwin',
+    name_zh: '艾爾文老師',
+    name_en: 'Teacher Erwin',
+    image_url: '/full/erwin-full.png',
+    capacity: 4,
+  },
+];
+
+/**
+ * Classic Snow Wolf Foley Session (雪狼經典場 × 擬音錄音) character roles
+ * 5 main child characters from the original story
+ */
+export const classicSnowWolfRoles: CharacterRole[] = [
+  {
+    id: 'litt',
+    name_zh: '里特',
+    name_en: 'Litt',
+    image_url: '/full/Litt-full.png',
+    capacity: 3,
+    description_zh: '雪狼男孩主角，勇敢且充滿正義感',
+    description_en: 'Snow Wolf Boy protagonist, brave and full of justice',
+  },
+  {
+    id: 'dean',
+    name_zh: '迪恩',
+    name_en: 'Dean',
+    image_url: '/full/dean-BfniCFnX.png',
+    capacity: 3,
+    description_zh: '里特的好友，聰明機智',
+    description_en: 'Litt\'s friend, smart and witty',
+  },
+  {
+    id: 'heather',
+    name_zh: '海瑟',
+    name_en: 'Heather',
+    image_url: '/full/heather-full.png',
+    capacity: 3,
+    description_zh: '溫柔善良的女孩',
+    description_en: 'Gentle and kind girl',
+  },
+  {
+    id: 'aileen',
+    name_zh: '艾琳',
+    name_en: 'Aileen',
+    image_url: '/full/aileen-full.png',
+    capacity: 3,
+    description_zh: '活潑開朗的女孩',
+    description_en: 'Lively and cheerful girl',
+  },
+  {
+    id: 'fia',
+    name_zh: '菲亞',
+    name_en: 'Fia',
+    image_url: '/full/fia-full.png',
+    capacity: 3,
+    description_zh: '擁有雪之力量的神秘女孩',
+    description_en: 'Mysterious girl with snow powers',
+  },
+];
+
+/**
+ * Helper function to create a role with default capacity
+ * If capacity is not provided, defaults to 4
+ */
+export function createRoleWithDefaults(
+  roleData: Omit<CharacterRole, 'capacity'> & { capacity?: number }
+): CharacterRole {
+  return {
+    ...roleData,
+    capacity: roleData.capacity ?? 4,
+  };
+}

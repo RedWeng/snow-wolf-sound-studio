@@ -1,0 +1,20 @@
+# 排除大型影片檔案（超過 100MB）
+public/video/錄音派對影片.mp4
+
+# 排除開發檔案
+.next/dev
+node_modules
+.git
+
+# 排除測試檔案
+__tests__
+*.test.ts
+*.test.tsx
+
+# 排除文件
+*.md
+!README.md
+
+# 排除設定檔案
+.env.local
+.env.example
