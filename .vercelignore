@@ -1,5 +1,13 @@
-# 排除大型影片檔案（超過 100MB）
-public/video/錄音派對影片.mp4
+# 排除所有影片檔案（太大，應該用 CDN）
+public/video/**
+public/image2/*.mp4
+
+# 排除大型圖片資料夾（只保留必要的角色圖片）
+public/image/**
+public/image2/**
+
+# 保留必要的角色圖片
+!public/full/**
 
 # 排除開發檔案
 .next/dev
@@ -18,3 +26,9 @@ __tests__
 # 排除設定檔案
 .env.local
 .env.example
+
+# 排除品牌資料夾
+01_Brand/**
+02_Events/**
+03_Media/**
+04_Copy/**
